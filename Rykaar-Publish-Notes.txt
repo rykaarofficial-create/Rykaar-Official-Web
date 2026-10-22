@@ -1,0 +1,15 @@
+RYKAAR OFFICIAL SITE — DOWNLOAD PACKAGE
+
+CONTENTS
+- Rykaar-Official-site.html: the public-facing website and browser-based admin CMS.
+- rykaar-server.js: local Node.js server and Gemini API proxy.
+- Open-Rykaar-Site-Locally.cmd: starts the local server and opens the site.
+- Gemini-Chat-Setup.txt: Gemini setup and deployment notes.
+
+OPEN THE LOCAL SITE
+Extract all files into one folder. Run Open-Rykaar-Site-Locally.cmd. The local site opens at http://127.0.0.1:4178/Rykaar-Official-site.html. Node.js 18 or later is required. Add the Gemini key in Admin CMS > Gemini Chat. The key is held in server memory and must be entered again after a server restart.
+
+PUBLISHING LIMITS
+This package is a runnable local site, not a fully shared production CMS. Its editable site content, uploads, listings, articles, and inquiry records are stored in the current visitor's browser (localStorage/IndexedDB). Those edits do not update the HTML file or appear in other visitors' browsers. The Gemini server can be hosted with Node.js, but shared site editing and shared contact records need a persistent server database and admin authentication before public launch.
+
+The local server binds only to this computer. Do not expose it to the internet as-is. For a public deployment, host the Node backend over HTTPS, configure GEMINI_API_KEY and RYKAAR_ADMIN_PASSCODE as server environment variables, and add shared database-backed CMS storage.

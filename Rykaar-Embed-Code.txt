@@ -1,0 +1,15 @@
+RYKAAR SITE EMBED
+
+After the site is deployed, replace https://YOUR-PUBLIC-RYKAAR-URL/ with its public HTTPS address and paste this into the destination website's HTML/embed block:
+
+<div style="width:100%;min-height:100vh;">
+  <iframe
+    src="https://YOUR-PUBLIC-RYKAAR-URL/"
+    title="Rykaar Official"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    style="display:block;width:100%;height:100vh;min-height:760px;border:0;"
+  ></iframe>
+</div>
+
+The site needs to be hosted before this embed can work. Replace the placeholder URL with the HTTPS URL assigned by the hosting provider. If the platform offers an HTML or iframe embed element, paste the snippet there.
